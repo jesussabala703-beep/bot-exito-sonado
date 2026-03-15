@@ -14,12 +14,12 @@ WA_LINK = "https://wa.me/16813392738?text="
 def send_welcome(message):
     markup = types.InlineKeyboardMarkup(row_width=1)
     
-    # Botones de Pago / Categorías
-    btn_zinli = types.InlineKeyboardButton("💳 Pagar vía Zinli", url=f"{WA_LINK}Hola%20Éxito%20Soñado,%20quiero%20pagar%20mi%20libro%20por%20Zinli")
+    # Botones de Pago / Categorías actualizados
+    btn_bibit = types.InlineKeyboardButton("💳 Pagar vía BIBIT", url=f"{WA_LINK}Hola%20Éxito%20Soñado,%20quiero%20pagar%20mi%20libro%20por%20BIBIT")
     btn_kontigo = types.InlineKeyboardButton("📱 Pagar vía Kontigo", url=f"{WA_LINK}Hola%20Éxito%20Soñado,%20quiero%20pagar%20mi%20libro%20por%20Kontigo")
     btn_bcv = types.InlineKeyboardButton("🏦 Pago Móvil / BCV", url=f"{WA_LINK}Hola%20Éxito%20Soñado,%20quiero%20pagar%20mi%20libro%20en%20Bolívares%20(BCV)")
     
-    markup.add(btn_zinli, btn_kontigo, btn_bcv)
+    markup.add(btn_bibit, btn_kontigo, btn_bcv)
     
     texto = (
         "🔱 **Éxito Soñado: Sistema de Élite**\n\n"
